@@ -1,0 +1,25 @@
+/* h1{
+    background-color: cyan;
+    color:crimson;
+    text-align:center;
+    font-family: Roboto;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: overline;
+} */
+
+.heading{
+    color: darkblue !important;
+}
+
+.heading1{
+    color:black;
+}
+
+/* #head{
+    color: fuchsia;
+} */
+
+/* *{
+    color: brown;
+} */
