@@ -1,0 +1,33 @@
+.outer{
+    background-color: #333;
+    height: 200px;
+    width: 400px;
+    margin: 30px;
+    padding: 15px;
+    display: flex;
+    gap: 12px;
+    /* flex-direction: row-reverse; */
+    /* align-items: center; */
+    flex-wrap: wrap;
+    /* justify-content: center;
+    align-content: stretch; */
+    align-content: ;
+}
+
+.items{
+    background-color: #922828;
+    color: white;
+    padding: 10px;
+    border: 2px solid rgb(111, 158, 40);
+    flex-grow: 5;
+}
+
+.item7{
+   order: -1;
+}
+.item5{
+    order: -1;
+}
+@media screen {
+    
+}
