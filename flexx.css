@@ -11,7 +11,6 @@
     flex-wrap: wrap;
     /* justify-content: center;
     align-content: stretch; */
-    align-content: ;
 }
 
 .items{
@@ -27,7 +26,4 @@
 }
 .item5{
     order: -1;
-}
-@media screen {
-    
 }
