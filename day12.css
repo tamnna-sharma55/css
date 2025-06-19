@@ -1,0 +1,124 @@
+.container{
+    background-color: brown;
+    height: 300px;
+    width: 300px;
+    margin-left: 400px;
+    margin-right: 200px ;
+} 
+
+@media print{
+    .container{
+        color: green;
+    }
+}
+
+@media (min-width:800){
+    .container{
+        background-color: blue;
+        height: 300px;
+        width: 300px;
+        margin-left: 400px;
+        margin-right: 200px;
+    }
+}   
+
+@media (max-width:500px){
+    .container{
+        background-color: blue;
+        height: 200px;
+        width: 200px;
+    }
+}
+
+@media (width:500px){
+    .container{
+        background-color: rgb(115, 255, 0);
+        height: 200px;
+        width: 200px;
+    }
+}
+
+@media (orientation:portrait) {
+    .container{
+        background-color: aqua;
+        height: 200px;
+        width: 200px;
+    }
+}
+
+@media (orientation:landscape) {
+    .container{
+        background-color: aqua;
+        height: 200px;
+        width: 200px;
+    }
+}
+
+@media (min-width:500px) and (orientation: landscape){
+    .heading{
+        background-color: rgb(246, 94, 24);
+        color: rgb(75, 19, 217);
+    }
+}
+
+ @media (min-width:500px) , (orientation: landscape){
+    .heading{
+        background-color: rgb(228, 148, 42);
+        color: rgb(14, 14, 13);
+    }
+} 
+
+@media not(min-width:500px){
+    .heading{
+        background-color: rgb(64, 191, 149);
+        color: rgb(28, 28, 13);
+    }
+}
+
+a:link{
+    background-color: aqua;
+    color: blue;
+}
+
+a:visited{
+    background-color: chartreuse;
+
+}
+
+.button:hover{
+    background-color: red;
+
+}
+
+input:focus{
+    border: 2px solid blue;
+    color: aqua;
+    background-color: red;
+}
+
+ul li:first-child{
+    background-color: red;
+
+}
+
+ul li:last-child{
+    background-color: blue;
+}
+
+ul li:nth-child(2n+2){
+    background-color: green;
+}
+
+p::first-letter{
+    color: red;
+
+}
+
+p::first-line{
+    background-color: rgb(16, 250, 16);
+
+}
+
+p::selection{
+    background-color: beige;
+}
