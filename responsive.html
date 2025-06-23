@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+    <style>
+        .header {
+            background-color: white;
+            overflow-y: scroll;
+            display: flex;
+            max-height: 50px;
+            max-width: 200px;
+            align-content: flex-start;
+            
+        }
+        
+        .img {
+            min-width: 100px;
+        }
+        
+        .container {
+            /* display: flex; */
+            /* flex-direction: column; */
+            padding: 50px;
+            justify-content: center;
+            font-size: 50px;
+            color: white;
+            text-align: left;
+            background-image: url(https://img.freepik.com/premium-photo/top-view-indian-food-black-background_641503-87348.jpg?uid=R121056201&ga=GA1.1.1865533930.1738668265&semt=ais_hybrid&w=740);
+            background-repeat: no-repeat;
+            height: 800px;
+            /* align-items: bottom; */
+            background-size: cover;
+            border: 5px solid black;
+        }
+        
+        .container1 {
+            margin: 100px;
+        }
+        
+        .container2 {
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 80px;
+            border: 2px solid gray;
+            padding: 10px;
+            border-radius: 20px;
+        }
+        
+        .menu {
+            margin: 100px;
+        }
+        
+        .container3 {
+            background-color: white;
+            margin: 80px;
+            padding: 10px;
+            border: 1px solid gray;
+            border-radius: 20px;
+        }
+        
+        .image1 {
+            margin: 50px;
+            height: 600px;
+            width: 1260px;
+            background-image: url(https://img.freepik.com/premium-photo/quail-mousse-bacon-broccoli-puree-close-up-selective-focus_98862-1785.jpg?uid=R121056201&ga=GA1.1.1865533930.1738668265&semt=ais_hybrid&w=740);
+            border: 2px solid gray;
+            background-repeat: no-repeat;
+            border-radius: 20px;
+            background-size: cover;
+        }
+        
+        h3 {
+            padding: 30px;
+        }
+        
+        a {
+            padding: 30px;
+        }
+        
+        .image2 {
+            margin: 50px;
+            height: 650px;
+            width: 1260px;
+            background-image: url(https://img.freepik.com/free-photo/front-view-boiled-vegetable-salad-blue-background_179666-17169.jpg?uid=R121056201&ga=GA1.1.1865533930.1738668265&semt=ais_hybrid&w=740);
+            border: 2px solid gray;
+            background-repeat: no-repeat;
+            border-radius: 20px;
+            background-size: cover;
+        }
+        
+        .image3 {
+            margin: 50px;
+            height: 650px;
+            width: 1260px;
+            background-image: url(https://img.freepik.com/free-photo/top-view-delicious-autumn-soup-composition_23-2148634470.jpg?uid=R121056201&ga=GA1.1.1865533930.1738668265&semt=ais_hybrid&w=740);
+            border: 2px solid gray;
+            background-repeat: no-repeat;
+            border-radius: 20px;
+            background-size: cover;
+        }
+        
+        .image4 {
+            margin: 50px;
+            height: 600px;
+            width: 1260px;
+            background-image: url(https://img.freepik.com/premium-photo/fresh-raw-seafood_136595-3202.jpg?uid=R121056201&ga=GA1.1.1865533930.1738668265&semt=ais_hybrid&w=740);
+            border: 2px solid gray;
+            background-repeat: no-repeat;
+            border-radius: 20px;
+            background-size: cover;
+        }
+        
+        .image5 {
+            margin: 50px;
+            height: 650px;
+            width: 1260px;
+            background-image: url(https://img.freepik.com/premium-photo/mix-vegetable-curry-indian-main-course-recipe-contains-carrots-cauliflower-green-peas-beans-baby-corn-capsicum-paneer-cottage-cheese-with-traditional-masala-curry_466689-35417.jpg?uid=R121056201&ga=GA1.1.1865533930.1738668265&semt=ais_hybrid&w=740);
+            border: 2px solid gray;
+            background-repeat: no-repeat;
+            border-radius: 20px;
+            background-size: cover;
+        }
+        
+        .image6 {
+            margin: 50px;
+            height: 650px;
+            width: 1260px;
+            background-image: url(https://img.freepik.com/free-photo/gourmet-meal-with-chopsticks-steaming-bowl-generative-ai_188544-12686.jpg?uid=R121056201&ga=GA1.1.1865533930.1738668265&semt=ais_hybrid&w=740);
+            border: 2px solid gray;
+            background-repeat: no-repeat;
+            border-radius: 20px;
+            background-size: cover;
+        }
+        
+        .image7 {
+            margin: 50px;
+            height: 650px;
+            width: 1260px;
+            background-image: url(https://img.freepik.com/premium-photo/salad-plate-isolated-white_182252-3635.jpg?uid=R121056201&ga=GA1.1.1865533930.1738668265&semt=ais_hybrid&w=740);
+            border: 2px solid gray;
+            background-repeat: no-repeat;
+            border-radius: 20px;
+            background-size: cover;
+        }
+        
+        .image8 {
+            margin: 50px;
+            height: 680px;
+            width: 1260px;
+            background-image: url(https://img.freepik.com/premium-photo/french-toast-with-ice-cream-banana_38196-557.jpg?uid=R121056201&ga=GA1.1.1865533930.1738668265&semt=ais_hybrid&w=740);
+            border: 2px solid gray;
+            background-repeat: no-repeat;
+            border-radius: 20px;
+            background-size: cover;
+        }
+        
+        .container4 {
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 80px;
+            border: 2px solid gray;
+            padding: 10px;
+            border-radius: 20px;
+        }
+        
+        .image {
+            width: 500px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+        
+        .container5 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 80px;
+            border: 2px solid gray;
+            padding: 10px;
+            border-radius: 20px;
+            background-color: rgb(255, 250, 244);
+        }
+        
+        .main {
+            height: 700px;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 80px;
+            border: 2px solid gray;
+            padding: 10px;
+            border-radius: 20px;
+        }
+        
+        .circle {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            height: 200px;
+            width: 500px;
+        }
+        
+        .circle1 {
+            height: 100px;
+            width: 100px;
+            display: flex;
+            margin: 30px;
+            padding: 10px;
+            align-items: center;
+            justify-content: center;
+            border-radius: 200px;
+            background-color: rgb(250, 244, 231);
+        }
+        
+        .container6 {
+            background-color: rgb(28, 30, 46);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 80px;
+            padding: 30px;
+            border-radius: 20px;
+        }
+        
+        .color {
+            padding: 10px;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+            
+        <ul class="nav nav-tabs">
+            <img src="https://res.cloudinary.com/deddpa6tv/image/upload/v1750658194/logo_y2x4r5.png" height="200px">
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"></a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Separated link</a></li>
+                </ul>
+            </li>
+        </ul>
+
+    </header>
+
+    <div class="container">
+        <h1>Get Delious food anytime</h1>
+        <h2>Eat Smart and Healthy</h2><br>
+        <button class="btn btn-warning">View Menu</button>
+        <button class="btn btn-outline-warning">Order Now</button>
+    </div>
+    <div class="container1">
+        <h1> Why Choose Us?</h1>
+        <p>We use both original recipes and classic<br> versions of famous food items.</p>
+    </div>
+    <div class="container2"><img src="https://cdn-icons-png.freepik.com/256/11671/11671105.png?uid=R121056201&ga=GA1.1.1865533930.1738668265&semt=ais_hybrid" alt="image" height="200p">
+        <h2>Food Service</h2>
+        <p>Experiencefine dining at the comfort of your home.All our orders are carefully packed and arranged to give you the nothing less than perfect. </p>
+    </div>
+
+    <div class="container2"><img src="https://cdn-icons-png.freepik.com/256/18277/18277597.png?uid=R121056201&ga=GA1.1.1865533930.1738668265&semt=ais_hybrid" alt="image" height="200px">
+        <h2>Fresh Food</h2>
+        <p>The Fresh Food group provides fresh-cut fruits and vegetables directly picked from our partner farms and farm houses so that you always get them tree to piate.</p>
+    </div>
+
+    <div class="container2"><img src="https://cdn-icons-png.freepik.com/256/8663/8663135.png?uid=R121056201&ga=GA1.1.1865533930.1738668265&semt=ais_hybrid" alt="image" height="200px">
+        <h2>Best Offers</h2>
+        <p>Food Coupons & Offers upto <i><b>50% OFF</b></i> and Exclusive Promo Codes on All Online Food Orderss.</p>
+    </div>
+
+    <div class="menu">
+        <h1><b>Explore Menu</b></h1><br></div>
+    <div class="container3">
+        <div class="image1"> </div>
+        <h3>Non-Veg Starters</h3>
+        <a class="arrow">View All
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+            </svg></a>
+
+    </div>
+    <div class="container3">
+        <div class="image2"> </div>
+        <h3>Veg Starters</h3>
+        <a class="arrow">View All
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+            </svg></a>
+
+    </div>
+
+    <div class="container3">
+        <div class="image3"> </div>
+        <h3>Soups</h3>
+        <a class="arrow">View All
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+            </svg></a>
+
+    </div>
+
+    <div class="container3">
+        <div class="image4"> </div>
+        <h3>Fish & Sea Food</h3>
+        <a class="arrow">View All
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+            </svg></a>
+
+    </div>
+
+    <div class="container3">
+        <div class="image5"> </div>
+        <h3>Main Course</h3>
+        <a class="arrow">View All
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+            </svg></a>
+
+    </div>
+
+    <div class="container3">
+        <div class="image6"> </div>
+        <h3>Noodles</h3>
+        <a class="arrow">View All
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+            </svg></a>
+
+    </div>
+
+    <div class="container3">
+        <div class="image7"> </div>
+        <h3>Salads</h3>
+        <a class="arrow">View All
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+            </svg></a>
+
+    </div>
+
+    <div class="container3">
+        <div class="image8"> </div>
+        <h3>Desserts</h3>
+        <a class="arrow">View All
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+            </svg></a>
+
+    </div>
+
+    <div class="container4"><img src="https://img.freepik.com/premium-photo/plate-with-keto-diet-food-set-products-ketogenic-diet-plate-cherry-tomatoes-boiled-broccoli-steamed-chicken-breast-salad-with-arugula-avocado-quail-eggs-keto-lunch_84130-1764.jpg?uid=R121056201&ga=GA1.1.1865533930.1738668265&semt=ais_hybrid&w=740" alt="food" height="200p">
+        <h2>Fresh, Healthy, Organic, Delicious Fruits</h2>
+        <p>Say no to harmful chemicals and go fully organic with our range fruits and veggies. Pamper your body and your senses with the true and unadultrated gifts from mother nature, with the true adultrated gifts from mother nature. </p>
+        <button class="btn btn-warning">Watch Video</button>
+    </div>
+
+    <div class="container4"><img src="https://img.freepik.com/premium-vector/special-discount-sale-tag-25-percent-off-sale-vector-design-premium-vector_624938-40.jpg?uid=R204887480&ga=GA1.1.2094782263.1749545716&semt=ais_hybrid&w=740" alt="food" height="200p">
+        <h2>Delivery and Payment</h2>
+        <p>Enjoy hassle-free payment with the plenitude of payment options available for you. Get live tracking and locate your food on a live map. It's quite a sight to see your food arrive to your door. Plus, you get 5% discount on every order everytime
+            you pay online.</p>
+        <button class="btn btn-warning">Order Now</button><br>
+        <div class="image">
+            <img src="https://cdn-icons-png.freepik.com/256/196/196578.png?uid=R204887480&ga=GA1.1.2094782263.1749545716&semt=ais_incoming" alt="food" height="70p">
+            <img src="https://cdn-icons-png.freepik.com/256/15527/15527520.png?uid=R204887480&ga=GA1.1.2094782263.1749545716&semt=ais_incoming" alt="food" height="70p">
+            <img src="https://cdn-icons-png.freepik.com/256/14082/14082911.png?uid=R204887480&ga=GA1.1.2094782263.1749545716&semt=ais_incoming" alt="food" height="60p">
+            <img src="https://cdn-icons-png.freepik.com/256/11378/11378369.png?uid=R204887480&ga=GA1.1.2094782263.1749545716&semt=ais_incoming" alt="food" height="60p">
+        </div>
+    </div>
+
+    <div class="container5">
+        <h2>Thank you for being a valuable customer to us.</h2>
+        <p>We have a surprise gift for you</p>
+        <img src="https://img.freepik.com/free-photo/3d-render-gift-box-with-ribbon-present-package_107791-15850.jpg?uid=R204887480&ga=GA1.1.2094782263.1749545716&semt=ais_hybrid&w=740" alt="gift" height="300p">
+        <button class="btn btn-warning">Redeem Gift</button>
+    </div>
+    <div class="main">
+        <h1>Follow Us</h1>
+        <div class="circle">
+            <div class="circle1"></div>
+            <div class="circle1"></div>
+            <div class="circle1"></div>
+        </div>
+        <div class="container6">
+            <img src="https://res.cloudinary.com/deddpa6tv/image/upload/v1750658194/logo_y2x4r5.png" alt="logo" height="100p">
+            <h2 class="color"><b>Goodfood@gmail.com</b></h2>
+            <h3 class="color">Street No. 23 , Govind gali , Delhi</h3>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
